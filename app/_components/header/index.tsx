@@ -10,7 +10,7 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="xl:px-60 lg:px-40 px-12 xl:pt-0 pt-4">
+    <header className="xl:px-40 lg:px-30 px-9 xl:pt-0 pt-4">
       <div id="description" className="lg:block hidden">
         <DescriptionHeader />
       </div>
@@ -26,9 +26,9 @@ export default function Header() {
         </div>
 
         {isMenuOpen && (
-          <div className="absolute top-16 right-4 bg-white p-4 shadow-md rounded-b-2xl md:hidden">
+          <div className="absolute top-20 right-4 bg-white p-4 shadow-md rounded-b-2xl md:hidden z-50">
             <nav id="links">
-              <ul className="flex flex-col gap-4">
+              <ul className="grid grid-cols-2 gap-4">
                 <li className="font-medium">
                   <a>Início</a>
                 </li>
@@ -43,8 +43,8 @@ export default function Header() {
                 </li>
               </ul>
             </nav>
-            <div id="contato" className="mt-4">
-              <ul className="flex gap-4">
+            <div id="contato" className="mt-2">
+              <ul className="flex gap-4 justify-center">
                 <li className="font-medium">
                   <Phone />
                 </li>

@@ -1,5 +1,6 @@
 "use client";
 
+import About from "../_components/about";
 import Header from "../_components/header";
 import Hero from "../_components/hero";
 
@@ -12,7 +13,9 @@ export default function Home() {
       <section>
         <Hero />
       </section>
-      <section className="bg-white z-50 absolute w-full h-96"></section>
+      <section>
+        <About />
+      </section>
     </main>
   );
 }

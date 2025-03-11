@@ -7,7 +7,7 @@ import main from "@/public/hero/main.png";
 
 export default function Hero() {
   return (
-    <main className="relative xl:px-60 lg:px-40">
+    <main className="relative xl:px-40 lg:px-20">
       <div
         id="shape"
         className="absolute inset-0 left-96 -top-20 z-10 hidden lg:block"
@@ -16,15 +16,9 @@ export default function Hero() {
       </div>
       <div
         id="ave"
-        className="absolute inset-0 lg:left-[600px] vw:left-[660px] xl:left-[700px] top-0 z-10 hidden lg:block"
+        className="absolute inset-0 lg:left-[450px] vw:left-[500px] xl:left-[700px] top-0 z-10 hidden lg:block"
       >
         <Image src={ave} alt="Ave" width={120} className="object-cover" />
-      </div>
-      <div
-        id="shape2"
-        className="absolute inset-0 lg:left-[660px] top-[500px] z-10 hidden lg:block"
-      >
-        <Image src={shape} alt="Figura" width={160} className="object-cover" />
       </div>
       <section className="flex justify-between lg:flex-row flex-col items-center relative z-20 pt-0 p-6 lg:p-0">
         <div id="introducao" className="flex flex-col gap-4 pt-16">
