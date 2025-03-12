@@ -70,7 +70,7 @@ export default function CarouselServices() {
               <div>
                 <Image src={service.image} alt={service.title} width={467.79} />
               </div>
-              <div className="flex flex-col gap-4 justify-start md:justify-center text-start max-w-[420px] h-[400px]">
+              <div className="flex flex-col gap-4 justify-start md:justify-center text-start max-w-[420px]">
                 <h1 className="text-3xl font-medium">{service.title}</h1>
                 <ul className="list-disc pl-5 space-y-2">
                   {service.topics.map((topic) => (
