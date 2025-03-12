@@ -1,6 +1,7 @@
 "use client";
 
 import About from "../_components/about";
+import CarouselServices from "../_components/carousel_services";
 import Header from "../_components/header";
 import Hero from "../_components/hero";
 
@@ -15,6 +16,9 @@ export default function Home() {
       </section>
       <section>
         <About />
+      </section>
+      <section>
+        <CarouselServices />
       </section>
     </main>
   );
