@@ -30,16 +30,16 @@ export default function Header() {
             <nav id="links">
               <ul className="grid grid-cols-2 gap-4">
                 <li className="font-medium">
-                  <a>Início</a>
+                  <a href="/">Início</a>
                 </li>
                 <li className="font-medium">
-                  <a>Serviços</a>
+                  <a href="#servicos">Serviços</a>
                 </li>
                 <li className="font-medium">
-                  <a>Cremação</a>
+                  <a href="#cremacao">Cremação</a>
                 </li>
                 <li className="font-medium">
-                  <a>Contato</a>
+                  <a href="#contact">Contato</a>
                 </li>
               </ul>
             </nav>
@@ -59,22 +59,26 @@ export default function Header() {
         <nav id="links" className="md:block hidden">
           <ul className="flex justify-between items-center gap-4">
             <li className="font-medium md:text-sm text-base">
-              <a>Início</a>
+              <a href="#inicio">Início</a>
             </li>
             <li className="font-medium md:text-sm text-base">
-              <a>Serviços</a>
+              <a href="#servicos">Serviços</a>
             </li>
             <li className="font-medium md:text-sm text-base">
-              <a>Cremação</a>
+              <a href="#cremacao">Cremação</a>
             </li>
             <li className="font-medium md:text-sm text-base">
-              <a>Contato</a>
+              <a href="#contact">Contato</a>
             </li>
           </ul>
         </nav>
         <div id="contato" className="md:flex hidden gap-4">
-          <Phone />
-          <Mail />
+          <a href="https://wa.me/+55013992028013">
+            <Phone />
+          </a>
+          <a href="mailto:edenpet@edenpet.com.br">
+            <Mail />
+          </a>
         </div>
       </section>
     </header>
