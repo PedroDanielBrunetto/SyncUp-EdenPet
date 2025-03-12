@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <main className="bg-[#F8F9FA]">
-      <header className="relative z-20">
+      <header className="relative z-50">
         <Header />
       </header>
       <section>

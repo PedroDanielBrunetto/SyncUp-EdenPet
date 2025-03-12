@@ -3,7 +3,7 @@
 import Image from "next/image";
 import DescriptionHeader from "./description";
 import logo from "@/public/logo-header.png";
-import { Mail, Phone, Menu } from "lucide-react";
+import { Mail, Phone, Menu, X } from "lucide-react";
 import { useState } from "react";
 
 export default function Header() {
@@ -26,33 +26,47 @@ export default function Header() {
         </div>
 
         {isMenuOpen && (
-          <div className="absolute top-20 right-4 bg-white p-4 shadow-md rounded-b-2xl md:hidden z-50">
+          <div className="fixed bottom-0 left-0 w-full bg-white p-4 shadow-md z-50">
+            <button
+              className="flex justify-end pr-2 w-full"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              <X />
+            </button>
             <nav id="links">
               <ul className="grid grid-cols-2 gap-4">
-                <li className="font-medium">
-                  <a href="/">Início</a>
+                <li>
+                  <a className="font-medium" href="/">
+                    Início
+                  </a>
+                </li>
+                <li>
+                  <a className="font-medium" href="#servicos">
+                    Serviços
+                  </a>
+                </li>
+                <li>
+                  <a className="font-medium" href="#cremacao">
+                    Cremação
+                  </a>
+                </li>
+                <li>
+                  <a className="font-medium" href="#contact">
+                    Contato
+                  </a>
                 </li>
                 <li className="font-medium">
-                  <a href="#servicos">Serviços</a>
+                  <a href="https://wa.me/+55013992028013">
+                    <Phone />
+                  </a>
                 </li>
                 <li className="font-medium">
-                  <a href="#cremacao">Cremação</a>
-                </li>
-                <li className="font-medium">
-                  <a href="#contact">Contato</a>
+                  <a href="mailto:edenpet@edenpet.com.br">
+                    <Mail />
+                  </a>
                 </li>
               </ul>
             </nav>
-            <div id="contato" className="mt-2">
-              <ul className="flex gap-4 justify-center">
-                <li className="font-medium">
-                  <Phone />
-                </li>
-                <li className="font-medium">
-                  <Mail />
-                </li>
-              </ul>
-            </div>
           </div>
         )}
 

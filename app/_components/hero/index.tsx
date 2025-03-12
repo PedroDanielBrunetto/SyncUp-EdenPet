@@ -32,11 +32,14 @@ export default function Hero() {
             Entre em contato conosco para que possamos honrar a memória do seu
             pet com carinho e respeito.
           </h3>
-          <a className="bg-[#090706] rounded-lg text-white p-3 text-center font-medium w-52">
+          <a
+            href="https://wa.me/+55013992028013"
+            className="bg-[#090706] rounded-lg text-white p-3 text-center font-medium w-52"
+          >
             Contate-nos
           </a>
         </div>
-        <div id="imagens">
+        <div id="imagens" className="relative z-0">
           <Image src={main} alt="Principal Image" />
         </div>
       </section>
