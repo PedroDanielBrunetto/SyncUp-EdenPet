@@ -20,8 +20,8 @@ export default function Hero() {
       >
         <Image src={ave} alt="Ave" width={120} className="object-cover" />
       </div>
-      <section className="flex justify-between lg:flex-row flex-col items-center relative z-20 pt-0 p-6 lg:p-0">
-        <div id="introducao" className="flex flex-col gap-4 pt-16">
+      <section className="flex justify-between lg:flex-row flex-col items-center relative z-20 pt-0 p-0">
+        <div id="introducao" className="flex flex-col gap-4 pt-16 p-6">
           <h4 className="text-sm font-medium text-[#57534E]">
             Eden Pet Litoral
           </h4>

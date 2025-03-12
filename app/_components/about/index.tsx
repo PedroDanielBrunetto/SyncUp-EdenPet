@@ -1,6 +1,11 @@
 "use client";
 
+import Image from "next/image";
 import Dashboard from "./dashboard";
+
+import respeito from "@/public/about/respeito.png";
+import economia from "@/public/about/economia.png";
+import contribuicao from "@/public/about/contribuicao.png";
 
 export default function About() {
   return (
@@ -38,6 +43,35 @@ export default function About() {
             longevidade do sucesso em qualquer atividade empresarial depende do
             equilíbrio harmônico entre os pilares da sustentabilidade.
           </p>
+        </div>
+        <div
+          id="topicos-sustentabilidade"
+          className="flex lg:flex-row flex-col justify-between items-center gap-4 py-6"
+        >
+          <div className="flex flex-col justify-center gap-2 w-[240px]">
+            <Image
+              src={economia}
+              width={240}
+              alt="Viabilidade econômica através de atuação ética"
+            />
+            <p className="text-center">
+              Viabilidade econômica através de atuação ética
+            </p>
+          </div>
+          <div className="flex flex-col justify-center gap-2 w-[240px]">
+            <Image
+              src={contribuicao}
+              width={240}
+              alt="Contribuição a sociedade assegurando a evolução"
+            />
+            <p className="text-center">
+              Contribuição a sociedade assegurando a evolução
+            </p>
+          </div>
+          <div className="flex flex-col justify-center gap-2 w-[240px]">
+            <Image src={respeito} width={240} alt="Respeito ao meio ambiente" />
+            <p className="text-center">Respeito ao meio ambiente</p>
+          </div>
         </div>
       </div>
     </section>
