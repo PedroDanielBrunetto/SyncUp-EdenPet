@@ -17,27 +17,16 @@ import { useRef } from "react";
 
 export default function CarouselServices() {
   const plugin = useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: false })
+    Autoplay({ delay: 3600, stopOnInteraction: false })
   ).current;
 
   const services = [
     {
-      id: 1,
-      title: "Cremação Coletiva",
-      topics: [
-        "O corpinho do seu pet é cremado coletivamente, junto a outros pets no forno de cremação;",
-        "Não há a devolução das cinzas, as mesmas são espargidas na Natureza;",
-        "O certificado de cremação é digital, enviado por e-mail ou whatsapp.",
-      ],
-      image: coletiva,
-    },
-    {
       id: 2,
       title: "Cremação Individual",
       topics: [
-        "O corpinho do seu pet é cremado individualmente no forno de cremação, as cinzas são recolhidas, seladas e armazenadas em uma urna padrão em madeira MDF;",
-        "O pagamento da cremação individual pode ser efetuado até o dia da entrega das cinzas;",
-        "O certificado de cremação é impresso e entregue junto à urna e as cinzas.",
+        "O corpinho do pet é cremado individualmente no forno de cremação, as cinzas são recolhidas, seladas e armazenadas em uma urna padrão em madeira MDF (outros modelos de urnas disponíveis no nosso catálogo de urnas);",
+        "O certificado de cremação impresso com a digital (carimbo) da patinha e tufo do pelinho do pet são entregues junto à urna e as cinzas.",
       ],
       image: individual,
     },
@@ -45,11 +34,21 @@ export default function CarouselServices() {
       id: 3,
       title: "Cremação Individual Assistida",
       topics: [
-        "O processo é igual ao da cremação individual, mas assistida presencialmente;",
+        "O procedimento é igual ao da cremação individual, mas assistida presencialmente;",
         "Os tutores agendam o dia e o horário da cremação, para assistir presencialmente no Eden Pet Crematório todo o procedimento de cremação;",
         "Desde o velório, a cremação até o processo final de embalagem e armazenamento das cinzas.",
       ],
       image: assistida,
+    },
+    {
+      id: 1,
+      title: "Cremação Coletiva",
+      topics: [
+        "O corpinho do pet é cremado coletivamente, junto a outros pets no forno de cremação;",
+        "Não há a devolução das cinzas, as mesmas são espargidas na Natureza;",
+        "O certificado de cremação é digital, enviado por e-mail ou Whatsapp.",
+      ],
+      image: coletiva,
     },
   ];
 
@@ -61,17 +60,38 @@ export default function CarouselServices() {
         onMouseEnter={() => plugin.stop()}
         onMouseLeave={() => plugin.reset()}
       >
+        <div className="p-6 lg:-mb-20 -mb-12">
+          <h1 className="text-3xl font-medium text-center">Serviços</h1>
+        </div>
         <CarouselContent>
           {services.map((service) => (
             <CarouselItem
               key={service.id}
-              className={`flex justify-around flex-col lg:flex-row w-full items-center lg:p-0 p-8 gap-8`}
+              className={`flex justify-around flex-col lg:flex-row w-full items-center lg:p-0 p-8 gap-8 min-h-[500px]`}
             >
-              <div>
-                <Image src={service.image} alt={service.title} width={467.79} />
+              <div className="min-w-[320px] flex flex-col items-center gap-4">
+                <Image
+                  src={service.image}
+                  alt={service.title}
+                  width={300}
+                  height={220}
+                  className="object-cover rounded-lg"
+                />
+                <h1 className="text-2xl font-medium pt-2 h-12 lg:h-auto">
+                  {service.title}
+                </h1>
+                <div className="flex lg:hidden flex-col gap-4 justify-start text-start max-w-[420px] min-h-[200px]">
+                  <ul className="list-disc pl-5 space-y-2 h-72 lg:h-auto">
+                    {service.topics.map((topic) => (
+                      <li key={topic} className="text-base font-normal">
+                        {topic}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
-              <div className="flex flex-col gap-4 justify-start md:justify-center text-start max-w-[420px]">
-                <h1 className="text-3xl font-medium">{service.title}</h1>
+
+              <div className="hidden lg:flex flex-col gap-4 justify-start text-start max-w-[420px] min-h-[200px]">
                 <ul className="list-disc pl-5 space-y-2">
                   {service.topics.map((topic) => (
                     <li key={topic} className="text-base font-normal">

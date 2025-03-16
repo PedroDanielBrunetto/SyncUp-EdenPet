@@ -7,7 +7,7 @@ import main from "@/public/hero/main.png";
 
 export default function Hero() {
   return (
-    <main className="relative xl:px-40 lg:px-20">
+    <main className="relative xl:px-40 lg:px-20 lg:mt-0 -mt-12">
       <div
         id="shape"
         className="absolute inset-0 left-96 -top-20 z-10 hidden lg:block"
@@ -26,11 +26,11 @@ export default function Hero() {
             Eden Pet Litoral
           </h4>
           <h1 className="xl:text-5xl vw:text-3xl text-2xl font-medium">
-            A memória do seu pet vive para sempre
+            A memória do seu pet para sempre{" "}
           </h1>
           <h3 className="text-base font-mono text-[#57534E]">
-            Entre em contato conosco para que possamos honrar a memória do seu
-            pet com carinho e respeito.
+            Conte conosco para honrar a memória do seu pet dignamente, com
+            respeito e afeto.
           </h3>
           <a
             href="https://wa.me/+55013992028013"

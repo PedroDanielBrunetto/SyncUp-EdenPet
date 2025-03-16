@@ -1,5 +1,10 @@
 "use client";
 
+import { useEffect, useState } from "react";
+import eden1 from "@/public/jardim-eden.webp";
+import eden2 from "@/public/jardim-eden-2.webp";
+import eden3 from "@/public/jardim-eden-3.webp";
+
 import Image from "next/image";
 import About from "../_components/about";
 import CarouselServices from "../_components/carousel_services";
@@ -10,7 +15,19 @@ import Hero from "../_components/hero";
 
 import logo from "@/public/logo-header.png";
 
+const images = [eden1, eden2, eden3];
+
 export default function Home() {
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prevImage) => (prevImage + 1) % images.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   const date = new Date();
   const currentYear = date.getFullYear();
 
@@ -19,17 +36,28 @@ export default function Home() {
       <header className="relative z-50">
         <Header />
       </header>
+      <section
+        id="banner"
+        className="xl:px-40 lg:px-20 relative z-50 p-6 lg:pb-0"
+      >
+        <Image
+          src={images[currentImage]}
+          alt="Jardim do Eden"
+          className="rounded-2xl max-w-full transition-opacity duration-1000 opacity-100"
+        />
+      </section>
       <section>
         <Hero />
       </section>
       <section>
         <About />
       </section>
-      <section id="servicos" className="lg:pb-12">
-        <CarouselServices />
-      </section>
-      <section id="cremacao" className="w-full pb-12">
+      <section id="cremacao" className="w-full">
         <Cremacao />
+      </section>
+      <section id="servicos" className="">
+        
+        <CarouselServices />
       </section>
       <section id="contact">
         <Contact />
