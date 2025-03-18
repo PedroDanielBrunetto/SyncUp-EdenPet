@@ -14,6 +14,9 @@ import Header from "../_components/header";
 import Hero from "../_components/hero";
 
 import logo from "@/public/logo-header.png";
+import Plans from "../_components/plans";
+import Structure from "../_components/structure";
+import ButtonDownload from "../_components/plans/button-download";
 
 const images = [eden1, eden2, eden3];
 
@@ -56,8 +59,16 @@ export default function Home() {
         <Cremacao />
       </section>
       <section id="servicos" className="">
-        
         <CarouselServices />
+      </section>
+      <section>
+        <Plans />
+      </section>
+      <section className="pt-4 pb-12 flex w-full justify-center">
+        <ButtonDownload />
+      </section>
+      <section>
+        <Structure />
       </section>
       <section id="contact">
         <Contact />
