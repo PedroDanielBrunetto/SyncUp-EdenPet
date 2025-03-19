@@ -61,7 +61,7 @@ export default function CarouselServices() {
         onMouseLeave={() => plugin.reset()}
       >
         <div className="p-6 lg:-mb-20 -mb-12">
-          <h1 className="text-3xl font-medium text-center">Serviços</h1>
+          <h1 className="text-3xl font-medium text-center">Tipos de Cremação</h1>
         </div>
         <CarouselContent>
           {services.map((service) => (

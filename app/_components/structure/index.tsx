@@ -30,15 +30,15 @@ export default function Structure() {
               preservar a memória dos animais de família que nos são confiados.
             </p>
             <p className="italic text-base">
-              Nosso crematório está instalado o entre as duas maiores cidades do
+              Nosso crematório está instalado entre as duas maiores cidades do
               estado de São Paulo, nos arredores de Campinas, ás margens da
-              rodovia Anhanguera a menos de 1 hora da capital paulista.
+              rodovia Anhanguera, à uma hora da capital paulista.
             </p>
             <p className="italic text-base">
-              Nosso escritório no litoral de São Paulo fica situado na cidade de
+              Nossa unidade no litoral de São Paulo fica situado na cidade de
               São Vicente, no endereço Av. Antônio Emmerich, 841 - Vila
-              Cascatinha, São Vicente - SP. Fazemos entrega em todo litoral de
-              São Paulo e região.
+              Cascatinha, São Vicente - SP. <br />
+              <strong>Atuamos em todo o litoral de São Paulo e região.</strong>
             </p>
           </div>
         </div>

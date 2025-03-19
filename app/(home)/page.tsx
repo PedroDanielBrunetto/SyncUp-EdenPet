@@ -64,8 +64,13 @@ export default function Home() {
       <section>
         <Plans />
       </section>
-      <section className="pt-4 pb-12 flex w-full justify-center">
-        <ButtonDownload />
+      <section className="pt-4 pb-12 flex w-full justify-center flex-col items-center gap-4">
+        <h2 className="text-base font-bold text-center w-80">
+          Disponibilizamos modelos de urnas diferenciadas e outros itens:
+        </h2>
+        <div>
+          <ButtonDownload />
+        </div>
       </section>
       <section>
         <Structure />
@@ -91,7 +96,7 @@ export default function Home() {
               </li>
               <li>
                 <a href="#servicos" className="hover:underline me-4 md:me-6">
-                  Serviços
+                  Tipos de Cremação
                 </a>
               </li>
               <li>

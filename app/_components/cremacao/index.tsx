@@ -32,19 +32,20 @@ export default function Cremacao() {
               A cremação é uma alternativa segura e respeitosa para a despedida
               do seu pet. Além de ser uma forma digna de homenagear seu
               companheiro, evitando riscos ambientais, como a contaminação do
-              solo e lençóis freáticos, comuns em enterros inadequados.
+              solo, nascentes e lençóis freáticos, que podem ocorrer em enterros
+              inadequados.
             </p>
             <p className="italic text-base">
               Com a cremação, você ainda pode manter as cinzas em uma urna
               especial ou espalhá-las (espargir) em um local significativo,
-              mantendo a memória do seu amigo sempre presente. <br /> É uma
-              escolha consciente que une amor, respeito e cuidado com o meio
-              ambiente.
+              mantendo a memória do seu amigo sempre presente.
+              <br /> É uma escolha consciente que une amor, respeito e cuidado
+              com o meio ambiente.
             </p>
           </div>
         </div>
       </div>
-      <div id="sustentabilidade" className="pt-6">
+      <div id="sustentabilidade" className="pt-8">
         <div id="title-sustentabilidade">
           <h1 className="font-medium text-3xl pb-6">Sustentabilidade</h1>
         </div>

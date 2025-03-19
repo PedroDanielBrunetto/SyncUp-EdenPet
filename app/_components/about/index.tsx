@@ -4,7 +4,7 @@ export default function About() {
   return (
     <section className="bg-white z-50 w-full xl:px-40 lg:px-20 p-6 lg:p-0">
       <div id="title">
-        <h1 className="font-medium text-3xl py-6">Sobre a Eden Pet</h1>
+        <h1 className="font-medium text-3xl py-6">Sobre o Eden Pet</h1>
       </div>
       <div id="resume" className="flex flex-col justify-between gap-4">
         <div>

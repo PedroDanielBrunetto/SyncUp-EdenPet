@@ -41,13 +41,13 @@ export default function Header() {
                   </a>
                 </li>
                 <li>
-                  <a className="font-medium" href="#servicos">
-                    Serviços
+                  <a className="font-medium" href="#cremacao">
+                    Cremação
                   </a>
                 </li>
                 <li>
-                  <a className="font-medium" href="#cremacao">
-                    Cremação
+                  <a className="font-medium" href="#servicos">
+                    Tipos de Cremação
                   </a>
                 </li>
                 <li>
@@ -76,10 +76,10 @@ export default function Header() {
               <a href="#inicio">Início</a>
             </li>
             <li className="font-medium md:text-sm text-base">
-              <a href="#servicos">Serviços</a>
+              <a href="#cremacao">Cremação</a>
             </li>
             <li className="font-medium md:text-sm text-base">
-              <a href="#cremacao">Cremação</a>
+              <a href="#servicos">Tipos de Cremação</a>
             </li>
             <li className="font-medium md:text-sm text-base">
               <a href="#contact">Contato</a>
