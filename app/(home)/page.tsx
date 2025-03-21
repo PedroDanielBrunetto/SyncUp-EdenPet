@@ -55,13 +55,13 @@ export default function Home() {
       <section>
         <About />
       </section>
-      <section id="cremacao" className="w-full">
+      <section className="w-full">
         <Cremacao />
       </section>
-      <section id="servicos" className="">
+      <section id="tipos-de-cremacao" className="">
         <CarouselServices />
       </section>
-      <section>
+      <section id="planos">
         <Plans />
       </section>
       <section className="pt-4 pb-12 flex w-full justify-center flex-col items-center gap-4">
@@ -75,7 +75,7 @@ export default function Home() {
       <section>
         <Structure />
       </section>
-      <section id="contact">
+      <section id="contato">
         <Contact />
       </section>
 

@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     url: "https://edenpetlitoral.com.br",
     images: [
       {
-        url: "/public/logo-header.png",
+        url: "/logo-header.png",
         width: 1200,
         height: 630,
         alt: "Banner Eden Pet Litoral - Crematório de Animais",
@@ -43,7 +43,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
+      <head>
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
+        <meta property="og:locale" content="pt_BR" />
+        <link rel="canonical" href="https://edenpetlitoral.com.br/" />
+      </head>
       <body className={`${inter.variable} antialiased`}>{children}</body>
     </html>
   );

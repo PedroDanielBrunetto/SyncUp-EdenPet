@@ -3,19 +3,19 @@ import { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "https://edenpetlitoral.com.br/",
+      url: "https://www.edenpetlitoral.com.br/",
       lastModified: new Date().toISOString(),
     },
     {
-      url: "https://edenpetlitoral.com.br/#servicos",
+      url: "https://www.edenpetlitoral.com.br/#tipos-de-cremacao",
       lastModified: new Date().toISOString(),
     },
     {
-      url: "https://edenpetlitoral.com.br/#cremacao",
+      url: "https://www.edenpetlitoral.com.br/#planos",
       lastModified: new Date().toISOString(),
     },
     {
-      url: "https://seusite.com/#contact",
+      url: "https://www.edenpetlitoral.com.br/#contato",
       lastModified: new Date().toISOString(),
     },
   ];

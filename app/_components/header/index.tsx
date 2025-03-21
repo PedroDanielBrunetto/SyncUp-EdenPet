@@ -41,17 +41,17 @@ export default function Header() {
                   </a>
                 </li>
                 <li>
-                  <a className="font-medium" href="#cremacao">
-                    Cremação
-                  </a>
-                </li>
-                <li>
-                  <a className="font-medium" href="#servicos">
+                  <a className="font-medium" href="#tipos-de-cremacao">
                     Tipos de Cremação
                   </a>
                 </li>
                 <li>
-                  <a className="font-medium" href="#contact">
+                  <a className="font-medium" href="#planos">
+                    Planos
+                  </a>
+                </li>
+                <li>
+                  <a className="font-medium" href="#contato">
                     Contato
                   </a>
                 </li>
@@ -75,14 +75,20 @@ export default function Header() {
             <li className="font-medium md:text-sm text-base">
               <a href="#inicio">Início</a>
             </li>
-            <li className="font-medium md:text-sm text-base">
-              <a href="#cremacao">Cremação</a>
+            <li>
+              <a className="font-medium md:text-sm text-base" href="#tipos-de-cremacao">
+                Tipos de Cremação
+              </a>
             </li>
-            <li className="font-medium md:text-sm text-base">
-              <a href="#servicos">Tipos de Cremação</a>
+            <li>
+              <a className="font-medium md:text-sm text-base" href="#planos">
+                Planos
+              </a>
             </li>
-            <li className="font-medium md:text-sm text-base">
-              <a href="#contact">Contato</a>
+            <li>
+              <a className="font-medium md:text-sm text-base" href="#contato">
+                Contato
+              </a>
             </li>
           </ul>
         </nav>
