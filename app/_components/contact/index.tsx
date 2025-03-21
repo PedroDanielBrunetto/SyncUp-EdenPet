@@ -35,11 +35,11 @@ export default function Contact() {
             (13) 99202-8013
           </a>
           <a
-            href="mailto:edenpet@edenpet.com.br"
+            href="mailto:contato@edenpetlitoral.com.br"
             className="flex items-center font-medium gap-2"
           >
             <Mail className="text-primary" />
-            edenpet@edenpet.com.br
+            contato@edenpetlitoral.com.br
           </a>
           <div className="flex items-center font-medium gap-2">
             <Clock className="text-primary" />

@@ -61,7 +61,7 @@ export default function Header() {
                   </a>
                 </li>
                 <li className="font-medium">
-                  <a href="mailto:edenpet@edenpet.com.br">
+                  <a href="mailto:contato@edenpetlitoral.com.br">
                     <Mail />
                   </a>
                 </li>
@@ -96,7 +96,7 @@ export default function Header() {
           <a href="https://wa.me/+55013992028013">
             <Phone />
           </a>
-          <a href="mailto:edenpet@edenpet.com.br">
+          <a href="mailto:contato@edenpetlitoral.com.br">
             <Mail />
           </a>
         </div>
