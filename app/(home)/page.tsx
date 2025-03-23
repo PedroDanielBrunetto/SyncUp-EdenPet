@@ -95,17 +95,17 @@ export default function Home() {
                 </a>
               </li>
               <li>
-                <a href="#servicos" className="hover:underline me-4 md:me-6">
+                <a href="#tipos-de-cremacao" className="hover:underline me-4 md:me-6">
                   Tipos de Cremação
                 </a>
               </li>
               <li>
-                <a href="#cremacao" className="hover:underline me-4 md:me-6">
-                  Cremação
+                <a href="#planos" className="hover:underline me-4 md:me-6">
+                  Planos
                 </a>
               </li>
               <li>
-                <a href="#contact" className="hover:underline">
+                <a href="#contato" className="hover:underline">
                   Contato
                 </a>
               </li>

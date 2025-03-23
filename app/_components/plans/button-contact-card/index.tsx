@@ -10,7 +10,7 @@ export default function ButtonContactCard() {
         title="Tirar dúvidas"
         href="https://wa.me/+55013992028013"
       >
-        Contratar plano
+        Consultar
         <svg
           aria-hidden="true"
           viewBox="0 0 10 10"

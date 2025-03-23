@@ -49,6 +49,7 @@ export default function RootLayout({
         <meta name="googlebot" content="index, follow" />
         <meta property="og:locale" content="pt_BR" />
         <link rel="canonical" href="https://edenpetlitoral.com.br/" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16678149685"></script>
       </head>
       <body className={`${inter.variable} antialiased`}>{children}</body>
     </html>

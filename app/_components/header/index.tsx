@@ -92,7 +92,7 @@ export default function Header() {
             </li>
           </ul>
         </nav>
-        <div id="contato" className="md:flex hidden gap-4">
+        <div className="md:flex hidden gap-4">
           <a href="https://wa.me/+55013992028013">
             <Phone />
           </a>
